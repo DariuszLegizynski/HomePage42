@@ -1,21 +1,15 @@
 <template>
 	<div class="burger">
-		<div
-			class="burger__stick"
-			:class="{ active: isBurgerActive }"
-			@click.prevent="toggle"
-		/>
+		<div class="burger__stick" :class="{ active: isBurgerActive }" />
 	</div>
 </template>
 
 <script>
 export default {
-	data: () => ({
-		isBurgerActive: false,
-	}),
-	methods: {
-		toggle() {
-			this.isBurgerActive = !this.isBurgerActive
+	props: {
+		isBurgerActive: {
+			type: Boolean,
+			required: true,
 		},
 	},
 }
@@ -67,5 +61,12 @@ export default {
 
 .active::after {
 	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media only screen and (min-width: 800px) {
+	.burger {
+		display: none;
+		visibility: hidden;
+	}
 }
 </style>

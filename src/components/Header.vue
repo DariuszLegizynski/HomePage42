@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<img src="#" alt="logo" />
-		<nav>
+		<nav :class="{ active: isBurgerActive }">
 			<ul class="header__list">
 				<li class="header__item"><a href="#">Home</a></li>
 				<li class="header__item"><a href="#">About Us</a></li>
@@ -11,15 +11,23 @@
 				<li class="header__item"><a href="#">Full Service</a></li>
 			</ul>
 		</nav>
-		<Burger />
+		<Burger @click.prevent="toggle" :isBurgerActive="isBurgerActive" />
 	</header>
 </template>
 
 <script>
 import Burger from './Burger'
 export default {
+	data: () => ({
+		isBurgerActive: false,
+	}),
 	components: {
 		Burger,
+	},
+	methods: {
+		toggle() {
+			this.isBurgerActive = !this.isBurgerActive
+		},
 	},
 }
 </script>
@@ -35,5 +43,16 @@ export default {
 }
 .header__item {
 	margin: 0 1rem;
+}
+.active {
+	display: block;
+	visibility: visible;
+}
+
+@media only screen and (max-width: 800px) {
+	nav {
+		display: none;
+		visibility: hidden;
+	}
 }
 </style>
