@@ -1,22 +1,39 @@
 <template>
 	<header class="header">
 		<img src="#" alt="logo" />
-		<span class="header__burger">BURGER</span>
-		<nav class="header__nav">
-			<ul>
-				<li class="header__list-item">Home</li>
-				<li class="header__list-item">About Us</li>
-				<li class="header__list-item">CMS & Web</li>
-				<li class="header__list-item">E-Commerce</li>
-				<li class="header__list-item">Apps & Mobile</li>
-				<li class="header__list-item">Full Service</li>
+		<nav>
+			<ul class="header__list">
+				<li class="header__item"><a href="#">Home</a></li>
+				<li class="header__item"><a href="#">About Us</a></li>
+				<li class="header__item"><a href="#">CMS & Web</a></li>
+				<li class="header__item"><a href="#">E-Commerce</a></li>
+				<li class="header__item"><a href="#">Apps & Mobile</a></li>
+				<li class="header__item"><a href="#">Full Service</a></li>
 			</ul>
 		</nav>
+		<Burger />
 	</header>
 </template>
 
 <script>
-export default {}
+import Burger from './Burger'
+export default {
+	components: {
+		Burger,
+	},
+}
 </script>
 
-<style></style>
+<style scoped>
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.header__list {
+	display: flex;
+}
+.header__item {
+	margin: 0 1rem;
+}
+</style>
