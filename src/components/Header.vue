@@ -37,6 +37,13 @@ export default {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 4rem;
+	z-index: 10;
+	background-color: #fff;
+	box-shadow: 0 5px 20px -10px #000;
 }
 .header__list {
 	display: flex;
