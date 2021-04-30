@@ -1,14 +1,17 @@
 <template>
 	<Header />
+	<ContactForm />
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import ContactForm from './components/ContactForm'
 
 export default {
 	name: 'App',
 	components: {
 		Header,
+		ContactForm,
 	},
 }
 </script>
