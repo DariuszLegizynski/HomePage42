@@ -38,6 +38,7 @@ export default {
 	align-items: center;
 	justify-content: space-around;
 	position: fixed;
+	padding: 0 1.6rem;
 	top: 0;
 	width: 100%;
 	height: 4rem;
@@ -47,13 +48,20 @@ export default {
 }
 .header__list {
 	display: flex;
+	flex-direction: column;
 }
 .header__item {
-	margin: 0 1rem;
+	margin: 1rem 0;
 }
 .active {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	visibility: visible;
+	background-color: white;
+	position: fixed;
+	top: 4rem;
+	width: 100vw;
+	
 }
 
 @media only screen and (max-width: 800px) {

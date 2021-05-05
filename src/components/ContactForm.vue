@@ -1,5 +1,5 @@
 <template>
-	<div class="contact">
+	<div class="contact" :class="{ open: showForm }">
 		<button @click="showForm = !showForm" v-if="!showForm">
 			contact
 		</button>
@@ -31,10 +31,9 @@
 				<label class="contact__label" for="message">message</label>
 				<textarea
 					class="contact__input"
-					name="name"
+					name="message"
 					type="text"
 					placeholder="how should your website look like?"
-					required
 				/>
 				<input class="contact__send" value="Send" type="submit" />
 			</form>
@@ -58,11 +57,41 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .contact {
-	margin-top: 5rem;
+	top: 0rem;
+	padding-top: 5rem;
+	right: 1rem;
+	position: fixed;
+	margin-left: 1rem;
 }
+.open {
+	background-color: orangered;
+	padding: 5rem 1rem;
+	right:0;
+	margin-left: 0;
+}
+
 .contact__container {
-	/* transform: translateX(100vh); */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	overflow: scroll;
+	position: relative;
+	padding: 2rem 0rem 1rem 3rem;
+	height: 100vh;
+}
+
+.contact__container button {
+	position: absolute;
+	top: 0rem;
+	right: 0rem;
+}
+
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start
 }
 </style>
