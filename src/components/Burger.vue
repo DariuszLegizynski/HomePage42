@@ -63,7 +63,7 @@ export default {
   transform: rotate(-45deg) translate(18px, 18px);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 640px) {
   .burger {
     display: none;
     visibility: hidden;

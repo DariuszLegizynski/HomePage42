@@ -45,6 +45,7 @@ export default {
   z-index: 10;
   background-color: var(--color-white);
   box-shadow: 0 5px 20px -10px #000;
+  z-index: 200;
 }
 .header__list {
   display: flex;
@@ -60,10 +61,12 @@ export default {
   background-color: var(--color-white);
   position: fixed;
   top: 4rem;
-  width: 100vw;
+  width: 100%;
+  right: 0px;
+  height: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 640px) {
   nav {
     display: none;
     visibility: hidden;

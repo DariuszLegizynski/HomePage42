@@ -43,8 +43,7 @@ export default {
 
 <style scoped>
 .contact {
-  top: 0rem;
-  padding-top: 5rem;
+  top: 5rem;
   right: 1rem;
   position: fixed;
   margin-left: 1rem;
@@ -55,6 +54,7 @@ export default {
   padding: 5rem 1rem;
   right: 0;
   margin-left: 0;
+  top: 0rem;
 }
 
 .contact__container {
