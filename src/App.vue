@@ -2,8 +2,8 @@
   <Header />
   <ContactForm />
   <HeroSection />
-  <AboutUs />
   <Projects />
+  <TrustedUs />
   <Credentials />
   <Process />
   <Footer />
@@ -13,7 +13,7 @@
 import Header from './components/Header.vue'
 import ContactForm from './components/ContactForm'
 import HeroSection from './components/HeroSection'
-import AboutUs from './components/AboutUs'
+import TrustedUs from './components/TrustedUs'
 import Projects from './components/Projects'
 import Credentials from './components/Credentials'
 import Process from './components/Process'
@@ -25,7 +25,7 @@ export default {
     Header,
     ContactForm,
     HeroSection,
-    AboutUs,
+    TrustedUs,
     Projects,
     Credentials,
     Process,

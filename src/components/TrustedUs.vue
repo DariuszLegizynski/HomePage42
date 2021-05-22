@@ -1,7 +1,7 @@
 <template>
   <div>
-    About us
-    <p>This part will contain the what we do and why we are needed</p>
+    Trusted us
+    <p>All the companies, that we cooperate with</p>
   </div>
 </template>
 
