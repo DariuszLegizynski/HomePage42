@@ -1,11 +1,38 @@
 <template>
-  <section class="hero">
-    <div class="hero__parallax">
-      <div class="hero__parallax__layer hero__parallax__layer--back" />
-      <div class="hero__parallax__layer hero__parallax__layer--base">
-        <h2 class="hero__h2">I can be your hero babe</h2>
-        <h5 class="hero__h5">I can kiss away your pain, oh yeah!</h5>
+  <!-- <section class="hero">
+    <div class="hero-parallax">
+      <div class="hero-parallax__layer hero-parallax__layer--back">
+        <h2 class="hero__h2">We are the ANSWER</h2>
       </div>
+      <div class="hero-parallax__layer hero-parallax__layer--base">
+        <h5 class="hero__h5">What, why?!</h5>
+      </div>
+    </div>
+  </section> -->
+  <section class="hero">
+    <div class="rellax" data-rellax-speed="-6">
+      <img src="~@/assets/pics/leaves/leaf1.png" alt="leaf1" />
+    </div>
+    <div class="rellax" data-rellax-speed="-5">
+      <img src="~@/assets/pics/leaves/leaf2.png" alt="leaf2" />
+    </div>
+    <div class="rellax" data-rellax-speed="-4">
+      <img src="~@/assets/pics/leaves/leaf3.png" alt="leaf3" />
+    </div>
+    <div class="rellax" data-rellax-speed="-3">
+      <h2 class="hero__h2">We are the ANSWER</h2>
+    </div>
+    <div class="rellax">
+      <img src="~@/assets/pics/leaves/leaf4.png" alt="leaf4" />
+    </div>
+    <div class="rellax" data-rellax-speed="1">
+      <img src="~@/assets/pics/leaves/leaf6.png" alt="leaf6" />
+    </div>
+    <div class="rellax" data-rellax-speed="2">
+      <img src="~@/assets/pics/leaves/leaf7.png" alt="leaf7" />
+    </div>
+    <div class="rellax" data-rellax-speed="3">
+      <img src="~@/assets/pics/leaves/leaf5.png" alt="leaf5" c />
     </div>
   </section>
 </template>
@@ -16,44 +43,12 @@ export default {}
 
 <style scoped>
 .hero {
-  margin-top: 4rem;
-}
-.hero__parallax {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 1px;
-}
-.hero__parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.hero__parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-  background-image: url('~@/assets/pics/mae-mu-YdN-kUtnOEQ-unsplash.jpeg');
-  background-color: var(--color-main);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: url(~@/assets/pics/mae-mu-YdN-kUtnOEQ-unsplash.jpeg) no-repeat
+    center center fixed;
   background-size: cover;
-  background-position: top;
-}
-.hero__parallax__layer--base {
-  transform: translateZ(0);
-}
-.hero__h2 {
-  position: absolute;
-  top: 10rem;
-  left: 2rem;
-  padding-right: 2rem;
-  color: var(--color-main);
-}
-.hero__h5 {
-  position: absolute;
-  top: 16.8rem;
-  right: 2rem;
-  padding-left: 8rem;
-
-  color: var(--color-main-light);
 }
 </style>

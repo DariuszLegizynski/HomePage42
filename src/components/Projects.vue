@@ -1,5 +1,6 @@
 <template>
   <section class="projects">
+    <h2>we are the ANSWER</h2>
     <h3>Lemon42 proudly presents:</h3>
     <ProjectCard>
       <template v-slot:header>
@@ -126,4 +127,4 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped></style>
