@@ -1,7 +1,6 @@
 <template>
   <section class="projects">
-    <h2>we are the ANSWER</h2>
-    <h3>Lemon42 proudly presents:</h3>
+    <h1>Lemon42 proudly presents:</h1>
     <ProjectCard>
       <template v-slot:header>
         <h3>Project 1</h3>
@@ -122,8 +121,8 @@ import ProjectCard from './ProjectCard'
 
 export default {
   components: {
-    ProjectCard,
-  },
+    ProjectCard
+  }
 }
 </script>
 

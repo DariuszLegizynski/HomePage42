@@ -2,10 +2,11 @@
   <Header />
   <ContactForm />
   <HeroSection />
-  <Projects />
-  <TrustedUs />
-  <Credentials />
+  <AboutUs />
   <Process />
+  <TrustedUs />
+  <Projects />
+  <Credentials />
   <Footer />
 </template>
 
@@ -13,6 +14,7 @@
 import Header from './components/Header.vue'
 import ContactForm from './components/ContactForm'
 import HeroSection from './components/HeroSection'
+import AboutUs from '@/components/AboutUs.vue'
 import TrustedUs from './components/TrustedUs'
 import Projects from './components/Projects'
 import Credentials from './components/Credentials'
@@ -25,12 +27,13 @@ export default {
     Header,
     ContactForm,
     HeroSection,
+    AboutUs,
     TrustedUs,
     Projects,
     Credentials,
     Process,
-    Footer,
-  },
+    Footer
+  }
 }
 </script>
 
